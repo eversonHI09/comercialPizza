@@ -1,2 +1,10 @@
-const primerToppignNaranja = document.querySelector('.topping.fondo-naranja');
-console.log(primerToppignNaranja);
+const toppings = document.getElementsByClassName( "topping" );
+
+for (const topping of toppings){
+    topping.addEventListener("click",(e) =>{
+
+        console.log(e.target.innerText)
+    });
+}
+
+
